@@ -1,9 +1,6 @@
 {
 	"$schema": "https://json.schemastore.org/eslintrc.json",
-	"plugins": [
-		"deprecation",
-		"import"
-	],
+	"plugins": ["import"],
 	"extends": [
 		"eslint:recommended",
 		"plugin:import/recommended"
@@ -33,7 +30,10 @@
 		{
 			"files": ["*.ts"],
 			"parser": "@typescript-eslint/parser",
-			"plugins": ["@typescript-eslint"],
+			"plugins": [
+				"@typescript-eslint",
+				"deprecation"
+			],
 			"extends": [
 				"eslint:recommended",
 				"plugin:@typescript-eslint/recommended"
@@ -66,6 +66,10 @@
 				"quotes": "off",
 				"indent": "off",
 				"no-shadow": "off",
+
+
+				"deprecation/deprecation": "warn",
+
 
 				"@typescript-eslint/indent": ["error", "tab", { "SwitchCase": 1 }],
 				"@typescript-eslint/quotes": ["error", "single"],
@@ -249,9 +253,6 @@
 				"count": 2
 			}
 		],
-		"import/no-unresolved": "off",
-
-
-		"deprecation/deprecation": "warn"
+		"import/no-unresolved": "off"
 	}
 }
