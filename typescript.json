@@ -148,7 +148,6 @@
 			"error",
 			{ "skipStrings": true, "skipComments": true, "skipTemplates": true }
 		],
-		"max-nested-callbacks": ["error", { "max": 4 }],
 		"max-statements-per-line": ["error", { "max": 2 }],
 		"comma-style": "error",
 		"array-bracket-spacing": "error",
