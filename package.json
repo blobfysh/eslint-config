@@ -1,6 +1,6 @@
 {
 	"name": "@blobfysh/eslint-config",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "personal eslint config for js/ts node projects",
 	"scripts": {
 		"lint": "eslint . --ext .ts,.js,.json"
