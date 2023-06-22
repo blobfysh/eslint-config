@@ -16,16 +16,24 @@
 					"error",
 					"never"
 				],
+				"jsonc/array-element-newline": ["error", "consistent"],
+				"jsonc/key-spacing": "error",
 				"jsonc/array-bracket-newline": [
 					"error",
 					{
 						"multiline": true,
 						"minItems": null
 					}
-				],
-				"jsonc/array-element-newline": ["error", "consistent"],
-				"jsonc/key-spacing": "error"
-			}
+				]
+			},
+			"overrides": [
+				{
+					"files": ["package.json"],
+					"rules": {
+						"jsonc/array-bracket-newline": "off"
+					}
+				}
+			]
 		},
 		{
 			"files": ["*.ts"],
