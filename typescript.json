@@ -28,7 +28,7 @@
 			},
 			"overrides": [
 				{
-					"files": ["package.json"],
+					"files": ["package.json", "renovate.json"],
 					"rules": {
 						"jsonc/array-bracket-newline": "off"
 					}
