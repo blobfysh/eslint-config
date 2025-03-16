@@ -1,6 +1,6 @@
 {
 	"name": "@blobfysh/eslint-config",
-	"version": "1.0.7",
+	"version": "2.0.2",
 	"description": "personal eslint config for js/ts node projects",
 	"scripts": {
 		"lint": "eslint . --ext .ts,.js,.json"
@@ -14,22 +14,28 @@
 	"publishConfig": {
 		"access": "public"
 	},
+	"type": "module",
 	"private": false,
 	"engines": {
-		"node": ">=16"
+		"node": ">=20"
 	},
 	"files": [
+		"eslint.config.mjs",
 		"typescript.json"
 	],
 	"dependencies": {
-		"@typescript-eslint/eslint-plugin": "^5.59.2",
-		"@typescript-eslint/parser": "^5.59.2",
-		"eslint": "^8.39.0",
-		"eslint-plugin-deprecation": "^1.4.1",
-		"eslint-plugin-import": "^2.27.5",
-		"eslint-plugin-jsonc": "^2.7.0"
+		"@eslint/eslintrc": "^3.3.0",
+		"@eslint/js": "^9.22.0",
+		"@stylistic/eslint-plugin": "3.1.0",
+		"@typescript-eslint/eslint-plugin": "^8.26.1",
+		"@typescript-eslint/parser": "^8.26.1",
+		"eslint": "^9.22.0",
+		"eslint-import-resolver-typescript": "^3.9.0",
+		"eslint-plugin-import": "^2.31.0",
+		"eslint-plugin-jsonc": "^2.19.1"
 	},
 	"devDependencies": {
-		"typescript": "^5.0.4"
-	}
+		"typescript": "^5.8.2"
+	},
+	"packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
 }
